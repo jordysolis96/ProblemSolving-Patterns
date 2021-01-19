@@ -68,37 +68,37 @@
     //4. Solve || Simplify
 
     //EX: Write a function which takes in a string and returns counts of each alphanumeric character in the string.
-	function countChars(str) {
-		//create a bucket
-		let charCount = {};
-
-		//loop through string to get chars
-		for (let char of str) {
-			//check if char is alphanumeric
-
-			//You can say: I don't know how to write the expression that checks for alphanumerics
-			//IF YOU DIDN'T KNOW, HERE'S WHAT THE INTERVIEW MIGHT SAY: How would you tell me if a character is alphanumeric?
-
-			//lowercase each char
-			char = char.toLowerCase();
-			if(/[a-z0-9]/.test(char)) {  //.test is a method for Regular Expressions
-				//if it is add to object
-				if(!charCount[char]) {
-					charCount[char] = 1;
-				} else {
-					charCount[char]++;
-				}
-			}
-		}
-
-		//return bucket object
-		return charCount;
-
-		//Talk out loud during interview
-		//Use "Let's" and "We"
-	}
-
-	console.log(countChars("hello!"));
+	// function countChars(str) {
+	// 	//create a bucket
+	// 	let charCount = {};
+	//
+	// 	//loop through string to get chars
+	// 	for (let char of str) {
+	// 		//check if char is alphanumeric
+	//
+	// 		//You can say: I don't know how to write the expression that checks for alphanumerics
+	// 		//IF YOU DIDN'T KNOW, HERE'S WHAT THE INTERVIEW MIGHT SAY: How would you tell me if a character is alphanumeric?
+	//
+	// 		//lowercase each char
+	// 		char = char.toLowerCase();
+	// 		if(/[a-z0-9]/.test(char)) {  //.test is a method for Regular Expressions
+	// 			//if it is add to object
+	// 			if(!charCount[char]) {
+	// 				charCount[char] = 1;
+	// 			} else {
+	// 				charCount[char]++;
+	// 			}
+	// 		}
+	// 	}
+	//
+	// 	//return bucket object
+	// 	return charCount;
+	//
+	// 	//Talk out loud during interview
+	// 	//Use "Let's" and "We"
+	// }
+	//
+	// console.log(countChars("hello!"));
 
 
 
